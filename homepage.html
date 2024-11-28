@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <style>
+        body,html {
+            height: 100%;
+            margin: 0;
+        }
+        .hero-text{
+            text-align: center;
+            position:absolute;
+            color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .hero-image{
+            background-image: url("medical.jpg");
+            background-size:cover;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .loader{
+          border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #3498db;
+  width: 40px;
+  height: 40px;
+  margin-left: 43%;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+} */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+</head>
+<body>
+    <span id="demo">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h4>efective medicien,new medicin everday</h4>
+                <h1 style="font-size: xx-large;">welcome to<br>medical store</h1>
+                <div class="loader"></div>
+            </div>
+        </div>
+    </p>
+        
+          
+</body>
+</html>

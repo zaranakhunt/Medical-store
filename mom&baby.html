@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        li {
+            float: left;
+        }
+        li a p{
+            float: left;
+        }
+        li a, .dropbtn {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        li a:hover, .dropdown:hover .dropbtn:focus{
+            background-color: skyblue;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            position: fixed;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        
+        .dropdown-content a:hover {background-color: lightblue;}
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        *{
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+}
+.column{
+  flex: 33.33%;
+  padding: 30px 0px 0px 80px;
+
+}
+.checked{
+    color: orange;
+}
+.about-section {
+    color: black;
+    background-color: #daf0ff;
+    background-size: 0px 0px 0px 0px;
+    padding: 40px 50px 30px 50px;
+    box-shadow: 0px 0px 0px 0px;
+    line-height: 0.5cm;
+  }
+  .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h5{
+    padding: 0px 0px 0px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #343434;
+}
+p{
+    line-height: 0.8cm;
+    padding: 0%;
+    margin: 0%;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: small;
+}
+.container{
+    padding: 0px 0px 10px 20px;
+    }
+ 
+    .dark,
+.dark * {
+  background-color: #222;
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+body {
+    margin: 0;
+    background: gradient( #212121);
+  }
+
+html,
+body {
+  height: 100%;
+}
+
+.background {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+ ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+  }
+  
+  .socials {
+    gap: 20px;
+  }
+  
+  .socials a {
+    font-size: 24px;
+  }
+  
+  .links {
+    gap: 10px;
+  }
+  
+  .legal {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(3) scaleX(2.25);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+  }
+  
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 12px;
+    display: flex;
+    width: 100%;
+    height: 370px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    width: 100%;
+  }
+  
+  @media (width > 420px) {
+    section {
+      align-items: center;
+      padding-left: 0;
+      
+    }
+  
+    
+  }
+</style>
+</head>
+<body>
+    <ul style=" overflow: hidden;
+  background-color: skyblue;
+  list-style-type: none;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    position: fixed;">
+    <li><a href="#home" onclick="window.location.href='homepage1.html';">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Medical Stock</a>
+      <div class="dropdown-content">
+        <a href="#" onclick="window.location.href='health,food&drink.html';">Health,Food & Drink</a>
+        <a href="#" onclick="window.location.href='personal care.html';">Personal Care</a>
+        <a href="#" onclick="window.location.href='mom&baby.html';">MOM & Baby Care</a>
+        <a href="#" onclick="window.location.href='skincare.html';">Skin Care</a>
+      </div>
+    </li>
+    <li><a href="#about us" onclick="window.location.href='about us page.html'">About us</a></li>
+    <li style="padding: 0px 0px 0px 800px"><a href="#login" onclick="window.location.href = 'loginpage.html';">Login</a></li>
+    <li><a href="#cart">cart</a></li>
+    </ul>
+      <h1 style="padding: 50px 0px 0px 60px;">MOM & BABY CARE</h1>
+      <hr>
+      <div class="row">
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc1.webp" style="width: 89.9%; padding: 10px 0px 0px 20px;">
+            <div class="container">
+                <p>Ultra D3 Drops - Vitamin D3 For Infants Vitamin Drops Bottle Of 15 Ml</p>
+                <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <p>$ 11.99</p>
+                <p>Free Delivery by Today</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc2.webp" style="width: 60%; padding: 10px 0px 0px 40px;">
+            <div class="container">
+                <p>Liveasy Baby Care Feeding Bottle</p>
+                <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <p>$ 10.89</p>
+                <p>Free Delivery</p>
+
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="Screenshot (14) 1.png" style="width: 82.7%; padding: 10px 0px 0px 40px;">
+            <div class="container">
+                <p>Depura Kids Nano Vitamin D3 Drops For Kids 400 Ui Per 0.5 Ml Dropper For Appropriate Dosage</p>
+                <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <p>$ 12.99</p>
+                <p>Free Delivery by 4 day</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc4.webp" style="width: 84.5%; padding: 10px 0px 0px 60px;">
+            <div class="container">
+                <p>Himalaya Baby Powder Bottle Of 400 Gm</p>
+                <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <p>$ 6.99</p>
+                <p>Free Delivery</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc5.webp" style="width: 85%; padding: 10px 0px 0px 30px;">
+            <div class="container">
+                <p>Sebamed Baby Cleansing Bar - 100g</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>$ 6.99</p>
+                <p>Free Delivery</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc6.webp" style="width: 80%; padding: 10px 0px 0px 50px;">
+            <div class="container">
+                <p>Nestle Nan Pro Stage 1 Infant Formula (Upto 6 Months) - 400 G Bag-In-Box</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>$ 9.45</p>
+                <p>Free Delivery by Today</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc7.webp" style="width: 71.4%; padding: 10px 0px 0px 78px;">
+            <div class="container">
+                <p>Sebamed Baby Gentle Wash 400ml|Ph 5.5| With Allantoin| No Tears Formula |Clinically Tested</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>$ 12.99</p>
+                <p>Free Delivery by 4 day</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc8.webp" style="width: 95%; padding: 10px 0px 0px 40px;">
+            <div class="container">
+                <p>Rashgard Baby Diaper Rash Cream (50 Gm - Pack Of 2)</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p>$ 5.49</p>
+                <p>Free Delivery</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc9.webp" style="width: 75%; padding: 10px 0px 0px 55px;">
+            <div class="container">
+                <p>Sebamed Baby Shampoo 500ml|Ph 5.5| Camomile|Natural|No Tears Formula|For Delicate Scalp</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>$ 6.99</p>
+                <p>Free Delivery by 2 Day</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc10.webp" style="width: 70.7%; padding: 10px 0px 0px 50px;">
+            <div class="container">
+                <p>Johnson'S Baby Powder - 200 Gm</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>$ 9.45</p>
+                <p>Free Delivery</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc11.webp" style="width: 64.3%; padding: 10px 0px 0px 60px;">
+            <div class="container">
+                <p>Oyo Baby Body Wash / Baby Daily Moisturising Bath For Delicate Skin Cream 200ml</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>$ 12.99</p>
+                <p>Free Delivery By Today</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="hover-shadow cursor">
+            <img src="bc12.webp" style="width: 71.5%; padding: 10px 0px 0px 50px;">
+            <div class="container">
+                <p>Johnson'S Baby Shampoo No More Tears 50 Ml</p>
+                <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p>$ 5.49</p>
+                <p>Free Delivery By 4 Day</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <footer>
+        
+        <div class="background">
+          
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="100%"
+            height="100%"
+            viewBox="0 0 1600 900"
+          >
+          
+            <defs>
+              <linearGradient id="bg" x2="0%" y2="100%">
+                <stop
+                  offset="0%"
+                  style="stop-color: lightblue"
+                ></stop>
+                <stop
+                  offset="100%"
+                  style="stop-color: rgba(38, 89, 190, 0.06)"
+                ></stop>
+              </linearGradient>
+              <path
+                id="wave"
+                fill="url(#bg)"
+                d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+        s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+              />
+            </defs>
+            <g>
+              <use xlink:href="#wave" opacity=".3">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="translate"
+                  dur="8s"
+                  calcMode="spline"
+                  values="270 230; -334 180; 270 230"
+                  keyTimes="0; .5; 1"
+                  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
+              <use xlink:href="#wave" opacity=".6">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="translate"
+                  dur="6s"
+                  calcMode="spline"
+                  values="-270 230;243 220;-270 230"
+                  keyTimes="0; .6; 1"
+                  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
+              <use xlink:href="#wave" opacty=".9">
+                <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="translate"
+                  dur="4s"
+                  calcMode="spline"
+                  values="0 230;-140 200;0 230"
+                  keyTimes="0; .4; 1"
+                  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                  repeatCount="indefinite"
+                />
+              </use>
+            </g>
+          </svg>
+          
+        </div>
+        
+    
+        <section>
+          <ul class="socials">
+            <li><a class="fa-brands fa-facebook"></a></li>
+            <li><a class="fa-brands fa-twitter"></a></li>
+            <li><a class="fa-brands fa-linkedin"></a></li>
+            <li><a class="fa-brands fa-instagram"></a></li>
+          </ul>
+          <ul class="links" >
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Team</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+          <p class="legal">© 2023 All rights reserved</p>
+        </section>
+      </footer>
+</body>
+</html>

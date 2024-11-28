@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+   
+      li {
+        float: left;
+      }
+      li a p{
+        float: left;
+      }
+      li a, .dropbtn {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      
+      li.dropdown {
+        display: inline-block;
+        position: relative;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        position: fixed;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+      
+      .dropdown-content a:hover {background-color: lightblue;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      .a{
+        text-align: right;
+      }
+      }
+      .A-row{
+  display: flex;
+  padding: 0px 0px 0px 0px;
+}
+.A-column{
+  flex: 33.33%;
+  padding: 30px 0px 0px 80px;
+
+}
+.about-section {
+    color: black;
+    background-color: #daf0ff;
+    background-size: 0px 0px 0px 0px;
+    padding: 40px 50px 40px 50px;
+    line-height: 0.5cm;
+  }
+
+      .img-thumbnail{
+        margin: 70px 0px 0px 50px ;}
+    .column {
+    float: right;
+    width: 10%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+      float: left;
+      margin: 5px;
+    }
+  
+    p {
+      padding: 20px 0px 0px 0px;
+      margin-left: 30%;
+      text-align: justify;
+      font-size: 20px;
+    }
+.row{
+    float: left;
+}
+h4{
+    padding: 90px 100px 0px 200px;
+      margin-left: 30%;
+      text-align: justify;
+}
+.checked {
+  color: orange;
+}
+.star{
+  padding: 0px 0px 0px 200px;
+  margin-left: 30%;
+}
+.btn{
+  color: white;
+  background-color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.A-btn{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #daf0ff;
+  border-radius: 5px;
+  color: #000;
+}
+h3{
+  font-size: large;
+}
+h5{
+  font-size: medium;
+}
+.B-row{
+  display: flex;
+  padding: 0px 0px 0px 0px;
+}
+.B-column{
+  flex: 33.33%;
+  padding: 20px 0px 0px 0px;
+}
+  .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.A-container{
+  line-height: 0.8cm;
+  padding: 0%;
+  margin: 0%;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: small;
+  padding-bottom: 10px;
+}
+
+.dark,
+.dark * {
+  background-color: #222;
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+body {
+    margin: 0;
+    background: gradient( #212121);
+  }
+
+html,
+body {
+  height: 100%;
+}
+
+.background {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+ ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+  }
+  
+  .socials {
+    gap: 20px;
+  }
+  
+  .socials a {
+    font-size: 24px;
+  }
+  
+  .links {
+    gap: 10px;
+  }
+  
+  .legal {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(3) scaleX(2.25);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+  }
+  
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 12px;
+    display: flex;
+    width: 100%;
+    height: 370px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    width: 100%;
+  }
+  
+  @media (width > 420px) {
+    section {
+      align-items: center;
+      padding-left: 0;
+      
+    }
+  
+    
+  }
+
+</style>
+</head>
+<body>
+    
+  <ul style=" overflow: hidden;
+  background-color: skyblue;
+  list-style-type: none;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    position: fixed;">
+    <li><a href="#home" onclick="window.location.href='homepage1.html';">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Medical Stock</a>
+      <div class="dropdown-content">
+        <a href="#" onclick="window.location.href='health,food&drink.html';">Health,Food & Drink</a>
+        <a href="#" onclick="window.location.href='personal care.html';">Personal Care</a>
+        <a href="#" onclick="window.location.href='mom&baby.html';">MOM & Baby Care</a>
+        <a href="#" onclick="window.location.href='skincare.html';">Skin Care</a>
+      </div>
+    </li>
+    <li><a href="#about us" onclick="window.location.href='about us page.html'">About us</a></li>
+    <li style="padding: 0px 0px 0px 800px"><a href="#login" onclick="window.location.href = 'loginpage.html';">Login</a></li>
+    <li><a href="#cart">cart</a></li>
+    </ul> 
+<div class="container mt-3">
+    <img src="hfd3.webp" class="img-thumbnail" width="304" height="236">
+        <div class="row">
+            <div class="column">
+            <img src="hfd3.webp"   style="width: 100%; padding: 20px 10px 0px 0px;">
+            </div>
+            <div class="column">
+            <img src="hfd402.webp"  style="width: 100%; padding: 20px 10px 0px 0px;">
+            </div>
+            <div class="column">
+            <img src="hfd403.webp"  style="width: 100%; padding: 20px 10px 0px 0px;">
+            </div>
+            <div class="column">
+            <img src="hfd404.webp"   style="width: 100%; padding: 20px 10px 0px 0px;">
+            </div>
+            <div class="column" style="width: 50%; float: right; padding: 0px 0px 0px 0px;">
+              <p style="font-size: medium; padding: 20px 0px 0px 0px; margin-left: 10%;"><b>Select Available Variant</b></p>
+              <p style="font-size: small; margin-left:10%; padding: 0%;"><b>Flavour</b></p>
+              <button class="A-btn" style="margin: 0px 0px 0px 55px;">Mixed Herbs</button>
+              <button class="A-btn">Amla</button>
+              <button class="A-btn">Aloe Vera</button>
+            </div>
+        </div>
+
+</div>
+<div class="square">
+    <h4><b>Everherb (By Pharmeasy) Amla Juice-Rich In Vitamin C-Natural Immunity Booster - 1 Litre Bottle</b></h4>
+    <h6 style="color: #296d98; margin-left: 30%; padding: 0px 0px 0px 200px;">visit EVERHERB store</h6>
+      <div class="star">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    <h4 style="margin-left: 30%; padding: 0px 0px 0px 200px;"><b>$9.99</b></h4>
+    <p style="margin-left: 30%; padding: 0px 0px 0px 200px; font-size: x-small;">Inclusive of all taxes</p>
+    <h5 style="margin-left: 30%; padding: 0px 0px 0px 200px; font-size: medium;"><b>FREE</b> Delivery</h5>
+    <button class="btn" style="margin-left: 11.5%;">Add To Cart</button>
+  <hr style="margin-left: 570px; margin-right: 120px;">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr style="margin-left: 30px; margin-right: 30px;">
+  <div>
+    <p style="padding: 0px 0px 0px 30px; margin: 0%; font-size: medium;"><b>Frequently Bought Together</b></p>
+
+
+
+
+
+    <div class="B-row">
+        <div class="B-column">
+            <div class="hover-shadow cursor">
+                <img src="hfd1.webp" style="width: 90%; padding: 10px 10px 0px 20px;">
+                <div class="A-container">
+                    <p style="font-size: small; margin: 0px 0px 0px 20px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 150px;">Everherb Diabetic Care Juice-11 Potent Ingredients -Healthy Blood Sugar Management - 1 Litre Bottle
+                    </p>
+                    <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">$ 9.99</p>
+                    <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">Free Delivery by Today</p>
+                    <button class="btn" style="margin-left: 10%;" onclick="window.location.href='hfd1.html';">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="B-column">
+            <div class="hover-shadow cursor">
+            <img src="hfd2.webp" style="width: 90%; padding: 0px 0px 0px 20px;">
+                <div class="A-container">
+                    <p style="font-size: small; margin: 0px 0px 0px 20px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 150px;">Liveasy Foods Sugarfree Chyavanposh - 900 Gms-Gives 2x Immunity - Boosts Energy
+                    </p>
+                    <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">$ 11.89</p>
+                    <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">Free Delivery</p>
+                    <button class="btn" style="margin-left: 10%;" onclick="window.location.href='hfd2.html';">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="B-column">
+            <div class="hover-shadow cursor">
+                <img src="hfd7.webp" style="width: 78%; padding: 10px 0px 10px 40px;">
+                <div class="A-container">
+                    <p style="font-size: small; margin: 0px 0px 0px 20px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 150px;">Protinex Nutritional Drink Mix For Adults For Everyday Health With High Protein Rich Chocolate 250g
+                    </p>
+                    <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">$ 11.99</p>
+                    <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">Free Delivery by 2 Day</p>
+                    <button class="btn" style="margin-left: 10%;" onclick="window.location.href='hfd3.html';">Add</button>
+                </div>
+            </div>
+          </div>
+            <div class="B-column">
+                <div class="hover-shadow cursor">
+                    <img src="hfd3.webp" style="width: 90%; padding: 10px 10px 0px 20px;">
+                    <div class="A-container">
+                        <p style="font-size: small; margin: 0px 0px 0px 20px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 150px;">Everherb (By Pharmeasy) Amla Juice-Rich In Vitamin C-Natural Immunity Booster - 1 Litre Bottle
+                        </p>
+                        <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">$ 9.99</p>
+                        <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">Free Delivery</p>
+                        <button class="btn" style="margin-left: 10%;">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="B-column">
+                <div class="hover-shadow cursor">
+                    <img src="hfd5.webp" style="width: 85%; padding: 10px 0px 5px 25px;">
+                    <div class="A-container">
+                        <p style="font-size: small; margin: 0px 0px 0px 20px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 150px;">Everherb (By Pharmeasy) Ashwagandha-Immunity Booster Capsules-Anxiety & Stress Relief-Bottle Of 60
+                        </p>
+                        <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">$ 14.99</p>
+                        <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">Free Delivery by 4 Day</p>
+                        <button class="btn" style="margin-left: 10%;">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="B-column">
+                <div class="hover-shadow cursor">
+                    <img src="hfd6.webp" style="width: 92%; padding: 0px 0px 0px 25px;">
+                    <div class="A-container">
+                        <p style="font-size: small; margin: 0px 0px 0px 20px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 150px;">Liveasy Foods Healthy Roasted Seed Mix - Blend Of 6 Fibre Rich Healthy Roasted Seeds - 200 Gms
+                        </p>
+                        <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">$ 9.45</p>
+                        <p style="font-size: small; margin: 0px 0px 0px 20px; padding: 0%; line-height: 0.6cm;">Free Delivery by Today</p>
+                        <button class="btn" style="margin-left: 10%;">Add</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <hr style="margin-left: 30px; margin-right: 30px;">
+    <p style="padding: 0px 0px 0px 30px; margin: 0%; font-size: medium;"><b>Description</b></p><br>
+    <p style="padding: 0px 30px 0px 30px; margin: 0%; font-size: medium;">
+        <b>EverHerb Amla Juice</b> is made from the extracts of organic Indian gooseberries or Amla. Amla is a trusted ingredient in Ayurvedic medication and has been in use for centuries. Its name literally means ‘nectar of life’. It has multiple <b>health-boosting properties</b> and regular consumption of Everherb Amla Juice can benefit a person in many ways.
+        <br><br>
+        <b>EverHerb Amla Juice</b> is a health supplement containing 99.9% Amla extracts which is an excellent source of vitamin C. It is an <b>antioxidant</b> and helps boost the <b>body’s immune system</b> and can protect cells from oxidative damage. <b>EverHerb Amla Juice</b> aids in <b>speeding up metabolism,</b> increasing energy levels and can help to keep body weight in control. Amla is also good for the skin; vitamin C can help with hyperpigmentation, tone facial skin and <b>slow down signs of ageing. EverHerb Amla Juice</b> is loaded with minerals such as iron, sodium, calcium, phosphorus, zinc, copper and potassium which can aid in numerous functions of the body such as enzyme secretion, <b>oxygen transportation</b>, muscle movement, heart rate regulation etc.
+        <br><br>
+      <b>Key Benefits:</b><br><br>
+      <ol style="padding: 0px 0px 0px 46px;">
+         <li><b>Improves immunity</b></li><br><br>
+          <li>Boosts up <b>metabolism</b> </li><br><br>
+          <li>Natural source of <b>Vitamin C</b></li><br><br>
+          <li>Keeps you active</li><br><br>
+          <li>Makes <b>skin healthy and supple</b></li><br><br>
+            <li><b>Reduces hair fall</b></li><br><br>
+            <li><b>Improves eyesight</b></li><br><br>
+            <li>Good for the <b>heart and brain</b></li>
+      </ol>
+      <br>
+      <div style="padding: 0px 0px 0px 30px;">
+      <b>Key Nutrients:</b>
+      <br><br>
+      <b>1. Vitamin C</b><br>
+      Vitamin C is one of the most powerful antioxidants found in nature. It keeps body cells safe from the harsh effects of free radicals. It helps in boosting immunity, iron absorption, collagen formation (needed for youthful and glowing skin), and maintenance of cartilage and bones.
+        <br><br>
+        <b>2. Calcium</b><br>
+
+        Calcium keeps bones and teeth strong. It plays an important role in the functioning of heart, muscles and nerves. It can also help in preventing high blood pressure, cancer and diabetes. When there isn't sufficient calcium in the body, the risk of osteoporosis rises and this results in brittle bones.
+        <br><br>
+        <b>3. Iron</b>
+        <br>
+        Iron is present in the haemoglobin of the blood and is responsible for the transport of oxygen to all the cells of the body. Oxygen is necessary for the cells to perform all their tasks. Iron is a part of many enzymes that perform vital functions of the body and also helps to maintain energy level.
+        <br><br>
+        <b>4. Sodium</b>
+        <br>
+        Optimum levels of sodium are necessary for maintaining electrolyte balance in the body. It plays an important role in controlling blood pressure, proper functioning of nerves and muscles. Sodium can also help in protecting the heart by lowering bad cholesterol levels.
+        <br><br>
+        <b>5. Potassium</b>
+        <br>
+        Potassium helps with muscle movement and can aid in preventing water retention and high blood pressure. This mineral is essential for reducing the risk of kidney stones and can help protect you from strokes.
+        <br><br>
+        <b>6. Zinc</b>
+        <br>
+        Zinc helps to increase the rate of metabolism. Increased metabolism means burning fats and high energy levels. It can also help to improve the immunity function of white blood cells and may also reduce inflammation and related health risks like heart disorders or arthritis.
+        <br><br>
+        <b>7. Copper</b>
+        <br>
+        Copper can aid in maintaining the health of red blood cells, neutrophils (a kind of white blood cells), nerves, blood vessels and also helps in the absorption of iron. Copper is also a powerful anti-microbial agent, which means that it can help to prevent infections from any harmful viruses, bacteria or fungi that may enter the body.
+      </div>
+      <br>
+      <div style="padding: 0px 0px 0px 30px;">
+      <b>How to consume this product:</b><br><br>
+      Mix 30 ml of EverHerb Amla Juice with a glass of water and consume the mixture in the morning and evening on an empty stomach. Do not consume any meal or drink for 30 minutes after taking the mixture.
+      </div>
+      <br>
+      <div style="padding: 0px 0px 0px 30px;">
+        <b>Recommended usage:</b><br><br>  
+      <br>
+      <div style="padding: 0px 0px 0px 15px;">
+      <ol>
+      <li>Store in a cool, hygienic, and dry place, preferable in a refrigerator.</li><br><br>
+      <li>Keep away from direct sunlight.</li>
+      </ol>
+      </div>
+      <br>
+      <div style="padding: 0px 0px 0px 30px;">
+      <b>Shelf Life:</b><br><br>
+
+      45 days once the seal is broken.
+      <br><br>
+      <b>Caution:</b>
+      </div>
+      <br>
+      <ol style="padding: 0px 0px 0px 46px;">
+      <li>Keep out of children’s reach.</li><br><br>
+      <li>Pregnant and nursing women should not consume this product.</li><br><br>
+      <li>Do not exceed the prescribed dosage.</li>
+      </ol>
+    </p>
+    <hr style="margin-left: 30px; margin-right: 30px;">
+  </div>
+</div>
+<div>
+  <p style="padding: 0px 200px 0px 30px; font-size: medium; margin: 0%;"><b>Product Details</b></p><br>
+  <p style="padding: 0px 300px 0px 30px; font-size: medium; margin: 0%;">
+    Brand:EVERHERB<br>
+  Expires on or After:29/06/2025<br>
+  Country of Origin:India<br>
+  Mnufacturer Details
+  </p>
+</div>
+<hr style="margin-left: 30px; margin-right: 30px;">
+<div>
+  <p style="font-size: medium; padding: 0px 200px 0px 30px; margin: 0%;"><b>Recent Reviews</b></p><br>
+  <p style="font-size: medium; padding: 0px 200px 0px 30px; margin: 0%;"><b>Alok Singh</b></p>
+  <div class="star" style="padding: 0px 200px 0px 30px; margin: 0%;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>
+  <p style="font-size: small; padding: 0px 200px 0px 30px; margin: 0%;">"It is very helpful to reduce diabetes."</p>
+  <p style="font-size: small; padding: 0px 200px 0px 30px; margin: 0%;">29 months ago</p>
+  <hr style="margin-left: 30px; margin-right: 30px;">
+  <p style="font-size: medium; padding: 0px 200px 0px 30px; margin: 0%;"><b>Ahmed Masood</b></p><br>
+  <div class="star" style="padding: 0px 200px 0px 30px; margin: 0%;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+  </div>
+  <p style="font-size: small; padding: 0px 200px 0px 30px; margin: 0%;">"It will help to regulate the blood sugar as I hope"</p>
+  <p style="font-size: small; padding: 0px 200px 0px 30px; margin: 0%;">26 months ago</p>
+  <hr style="margin-left: 30px; margin-right: 30px;">
+  <p style="font-size: medium; padding: 0px 200px 0px 30px; margin: 0%;"><b>Mahalaxmi</b></p><br>
+  <div class="star" style="padding: 0px 200px 0px 30px; margin: 0%;">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+  </div>
+  <p style="font-size: small; padding: 0px 200px 0px 30px; margin: 0%;">"Very good. I will want 1 more bottle please"</p>
+  <p style="font-size: small; padding: 0px 200px 0px 30px; margin: 0%;">28 months ago</p>
+  <hr style="margin-left: 30px; margin-right: 30px;">
+</div>
+<br>
+  <br>
+  <br>
+  <footer>
+        
+    <div class="background">
+      
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100%"
+        height="100%"
+        viewBox="0 0 1600 900"
+      >
+      
+        <defs>
+          <linearGradient id="bg" x2="0%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color: lightblue"
+            ></stop>
+            <stop
+              offset="100%"
+              style="stop-color: rgba(38, 89, 190, 0.06)"
+            ></stop>
+          </linearGradient>
+          <path
+            id="wave"
+            fill="url(#bg)"
+            d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+          />
+        </defs>
+        <g>
+          <use xlink:href="#wave" opacity=".3">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="8s"
+              calcMode="spline"
+              values="270 230; -334 180; 270 230"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacity=".6">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="6s"
+              calcMode="spline"
+              values="-270 230;243 220;-270 230"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacty=".9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="4s"
+              calcMode="spline"
+              values="0 230;-140 200;0 230"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+        </g>
+      </svg>
+      
+    </div>
+    
+
+    <section>
+      <ul class="socials">
+        <li><a class="fa-brands fa-facebook"></a></li>
+        <li><a class="fa-brands fa-twitter"></a></li>
+        <li><a class="fa-brands fa-linkedin"></a></li>
+        <li><a class="fa-brands fa-instagram"></a></li>
+      </ul>
+      <ul class="links" >
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Services</a></li>
+        <li><a>Team</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+      <p class="legal">© 2023 All rights reserved</p>
+    </section>
+  </footer>
+</body>
+</html>

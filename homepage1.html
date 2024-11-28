@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+<style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  li {
+    float: left;
+  }
+  li a p{
+    float: left;
+  }
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+  li.dropdown {
+    display: inline-block;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: fixed;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {background-color: lightblue;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  
+  }
+  * {
+box-sizing: border-box;
+  }
+
+.overlay {
+display: none;
+z-index: 1;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position: absolute;
+top: 23%;
+width: 28%;
+text-align: center;
+margin: auto;
+} 
+*{
+  box-sizing: border-box;
+}  
+.row{
+  display: flex;
+}
+.column{
+  flex: 33.33%;
+  padding: 70px;
+  
+} 
+
+
+
+.dark,
+.dark * {
+  background-color: #222;
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+body {
+    margin: 0;
+    background: gradient( #212121);
+  }
+
+html,
+body {
+  height: 100%;
+}
+
+.background {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+ ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+  }
+  
+  .socials {
+    gap: 20px;
+  }
+  
+  .socials a {
+    font-size: 24px;
+  }
+  
+  .links {
+    gap: 10px;
+  }
+  
+  .legal {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(3) scaleX(2.25);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+  }
+  
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 12px;
+    display: flex;
+    width: 100%;
+    height: 370px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    width: 100%;
+  }
+  
+  @media (width > 420px) {
+    section {
+      align-items: center;
+      padding-left: 0;
+      
+    }
+  
+    
+  }
+
+
+
+</style>
+</head>
+
+<body>
+  <ul style=" overflow: hidden;
+  background-color: skyblue;
+  list-style-type: none;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    position: fixed;">
+    <li><a href="#home" onclick="window.location.href='homepage1.html';">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Medical Stock</a>
+      <div class="dropdown-content">
+        <a href="#" onclick="window.location.href='health,food&drink.html';">Health,Food & Drink</a>
+        <a href="#" onclick="window.location.href='personal care.html';">Personal Care</a>
+        <a href="#" onclick="window.location.href='mom&baby.html';">MOM & Baby Care</a>
+        <a href="#" onclick="window.location.href='skincare.html';">Skin Care</a>
+      </div>
+    </li>
+    <li><a href="#about us" onclick="window.location.href='about us page.html'">About us</a></li>
+    <li style="padding: 0px 0px 0px 800px"><a href="#login" onclick="window.location.href = 'loginpage.html';">Login</a></li>
+    <li><a href="#cart">cart</a></li>
+  </ul>
+
+
+<header>
+    <h2 style="padding: 50px 0px 0px 60px">Shop by Categories</h2>
+    <div class="row" style="box-shadow: 0px 0px 4px 0px;">
+      <div class="column" style="box-shadow: 0px 0px 4px 0px;">
+        <a href="health,food&drink.html">
+          <img src="health food and drink.webp" style="width: 90%;" >
+          <div class="container">
+            <h3>Health,food and drink</h3>
+          </div>
+        </a>
+        </div>
+      <div class="column" style="box-shadow: 0px 0px 4px 0px;">
+        <a href="personal care.html">
+          <img src="personal care.webp" style="width: 90%;">
+          <div class="container">
+            <h3 style="padding: 0px 10px 0px 20px;">Personal care</h3>
+          </div>
+        </a>
+      </div>
+      <div class="column" style="box-shadow: 0px 0px 4px 0px;">
+        <a href="mom&baby.html">
+          <img src="mom and baby care.webp" style="width: 90%;">
+          <div class="container">
+            <h3 style="padding: 0px 10px 0px 10px;">Mother and baby care</h3>
+          </div>
+        </a>
+      </div>
+      <div class="column" style="box-shadow: 0px 0px 4px 0px;">
+        <a href="skincare.html">
+          <img src="skin care.webp" style="width: 90%;">
+          <div class="container">
+            <h3 style="padding: 0px 10px 0px 50px;">Skin care</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <h2 style="padding:0px 70px 0px 50px;">What Our Customers have to Say</h2>
+    <div class="row a" style="box-shadow: 0px 0px 4px 0px;">
+      <div class="column a" style="box-shadow: 0px 0px 4px 0px;">
+        <h3>Nisha Tomar</h3>
+        <h5 style="color: darkgray;">March 22, 2023</h5>
+        <p style="background-color: #daf0ff; background-clip: padding-box; padding: 20px 20px 20px 20px;">I love using the app! They have everything related to health, like medicines, lab tests, and other healthcare essentials, at GREAT prices. Their service is amazing and quick, and the app is also easy to use.
+        </p>
+      </div>
+      <div class="column a" style="box-shadow: 0px 0px 4px 0px;">
+        <h3>Arvind Dingwani</h3>
+        <h5 style="color: darkgray;">February 26, 2023</h5>
+        <p style="background-color: #daf0ff; background-clip: padding-box; padding: 20px 20px 20px 20px;">I was a bit doubtful about using an online app, but this app exceeded my expectations. The discount coupons were great, prices were very reasonable, and the delivery was quick and smooth. I would definitely use it again.
+        </p>
+      </div>
+      <div class="column a" style="box-shadow: 0px 0px 4px 0px;">
+        <h3>Shreya Sharma</h3>
+        <h5 style="color: darkgray;">April 15, 2023</h5>
+        <p style="background-color: #daf0ff; background-clip: padding-box; padding: 20px 20px 20px 20px;">I can't recommend the app enough! It's the perfect one-stop shop for my whole family's healthcare needs. The offers you can get here are beyond what other platforms offer. Customer service, including returns, is also very convenient. This app deserves 5 stars.
+        </p>
+      </div>
+      <div class="column a" style="box-shadow: 0px 0px 4px 0px;">
+        <h3>Rajeev Kapoor</h3>
+        <h5 style="color: darkgray;">January 3, 2023</h5>
+        <p style="background-color: #daf0ff; background-clip: padding-box; padding: 20px 20px 20px 20px;">I recently started using , and I'm already a fan. They have a vast selection of products at affordable prices, which is a huge relief for my wallet. Their delivery is always prompt, and their customer service is top-notch. Thank you.
+        </p>
+      </div>
+    </div>
+</header>
+  <br>
+  <br>
+  <br>
+  
+  <footer>
+        
+    <div class="background">
+      
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100%"
+        height="100%"
+        viewBox="0 0 1600 900"
+      >
+      
+        <defs>
+          <linearGradient id="bg" x2="0%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color: lightblue"
+            ></stop>
+            <stop
+              offset="100%"
+              style="stop-color: rgba(38, 89, 190, 0.06)"
+            ></stop>
+          </linearGradient>
+          <path
+            id="wave"
+            fill="url(#bg)"
+            d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+          />
+        </defs>
+        <g>
+          <use xlink:href="#wave" opacity=".3">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="8s"
+              calcMode="spline"
+              values="270 230; -334 180; 270 230"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacity=".6">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="6s"
+              calcMode="spline"
+              values="-270 230;243 220;-270 230"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacty=".9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="4s"
+              calcMode="spline"
+              values="0 230;-140 200;0 230"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+        </g>
+      </svg>
+      
+    </div>
+    
+
+    <section>
+      <ul class="socials">
+        <li><a class="fa-brands fa-facebook"></a></li>
+        <li><a class="fa-brands fa-twitter"></a></li>
+        <li><a class="fa-brands fa-linkedin"></a></li>
+        <li><a class="fa-brands fa-instagram"></a></li>
+      </ul>
+      <ul class="links" >
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Services</a></li>
+        <li><a>Team</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+      <p class="legal">© 2023 All rights reserved</p>
+    </section>
+  </footer>
+
+</body>
+</html>
